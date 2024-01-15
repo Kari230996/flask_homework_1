@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Home - Jackets{% endblock %}
+
+{% block content %}
+<h2>Jackets</h2>
+
+<table>
+    {% for jacket in jackets %}
+    <tr>
+        <td>{{ jacket.title }}</td>
+        <td>{{ jacket.material }}</td>
+        <td>{{ jacket.price }}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+{% endblock %}
