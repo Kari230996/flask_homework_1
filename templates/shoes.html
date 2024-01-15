@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Shoes{% endblock %}
+
+
+{% block content %}
+<h2>Shoes</h2>
+<table>
+    {% for shoe in shoes %}
+    <tr>
+        <td>{{ shoe.title }}</td>
+        <td>{{ shoe.material }}</td>
+        <td>{{ shoe.price }}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+{% endblock %}
